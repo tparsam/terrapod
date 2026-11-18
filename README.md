@@ -4,6 +4,8 @@ Our entry for the [Nabat TerraPod Challenge](https://challengeon.atrc.ae/en/chal
 biodegradable seed carrier that a drone drops from 12 to 15 m to grow native plants in the UAE desert.
 Phase 1 deck due 19 Nov 2026.
 
+**Building the deck? Start with [`deck/DECK-GUIDE.md`](deck/DECK-GUIDE.md).**
+
 **Start with [`final-design.md`](final-design.md)**: the challenge rules, the current design and the decision log.
 
 | File | What it is |
@@ -12,6 +14,7 @@ Phase 1 deck due 19 Nov 2026.
 | [`research.md`](research.md) | Background research: species, soils, seed carriers, costs |
 | [`prior-art.md`](prior-art.md) | Who has done similar work, with sources |
 | [`nabat-terrapod-notes.md`](nabat-terrapod-notes.md), [`notes.md`](notes.md) | Working notes and challenge summary |
+| [`deck/`](deck/DECK-GUIDE.md) | Phase 1 deck build guide (design system, slide-by-slide copy, Claude prompt) and pod renders |
 | [`geometry/`](geometry/README.md) | Shape search (genetic algorithm, 3D landing simulation, stress model), press moulds, bench-test protocol |
 
 ## Running the geometry code
