@@ -11,3 +11,4 @@ __pycache__/
 !geometry/out/ga2/B_narrowest_25mm/pick_1_mould_half.stl
 !geometry/out/ga2_mix*/*/pick_1_mould_half.stl
 !geometry/out/ga2_mixB/*/disc_version_mould_half.stl
+!geometry/out/print/*.stl

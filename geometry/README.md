@@ -220,7 +220,7 @@ all on the same 200 landings and the same squeeze test. Results: `out/mix_design
 ```bash
 uv run --python 3.11 geometry/ga2.py --cover-min 3.0 --out geometry/out/ga2_mixA   # ~25 min on 10 cores
 uv run --python 3.11 geometry/ga2.py --cover-min 4.5 --out geometry/out/ga2_mixB   # ~25 min (75 min on a busy machine)
-uv run --python 3.11 geometry/mix_compare.py                                       # ~1.5 min
+uv run --python 3.11 geometry/mix_compare.py --shrink 0.05 --dried-min 26         # ~1.5 min; also writes out/print/
 ```
 
 | Tip to tip | Thick | Hole | Mass | Median travel | On edge | Crush load (lead = 1) |
@@ -235,3 +235,7 @@ lobes touches the top board at two tips, so the load landed unevenly on them, be
 far too weak (a 5-lobe disc came out barely stronger than the same ring). `board_nodes` now loads every node
 within 0.01 mm of each board, evenly. The 4-lobe results and the genetic search (impact model) are unchanged;
 the old 5-lobe backup's crush load rises to 1.44× the lead's.
+
+**Print size.** The searched designs sit at exactly 25.0 mm and clay shrinks as it dries, so `mix_compare.py`
+also writes `out/print/`: the final designs scaled evenly to dry at ≥ 26 mm tip to tip, with moulds enlarged
+by `--shrink` (placeholder 5%; measure one pressed pod and re-run). Table: `out/print/print.md`.

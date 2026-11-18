@@ -15,7 +15,7 @@ Read geometry/README.md for what the models do and do not cover.
 import argparse
 import csv
 import math
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from functools import lru_cache
 from pathlib import Path
 
@@ -340,6 +340,12 @@ def constraints(m, cfg):
     """<= 0 means satisfied."""
     return [cfg.cover_min - m["cover_mm"], cfg.wall_min - m["wall_mm"],
             cfg.tip_r_min - m["tip_r_mm"], cfg.valley_r_min - min(m["valley_r_mm"], 1e3)]
+
+
+def scaled(pod, k):
+    """The same pod k times bigger in every direction (all mm settings; lobe count and profile unchanged)."""
+    return replace(pod, D=pod.D * k, hole=pod.hole * k, t_edge=pod.t_edge * k, dome=pod.dome * k, a=pod.a * k,
+                   rim=pod.rim * k)
 
 
 def to_pod(x):

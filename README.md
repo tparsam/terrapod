@@ -21,10 +21,11 @@ Needs [`uv`](https://docs.astral.sh/uv/). Each script installs its own dependenc
 ```bash
 uv run --python 3.11 geometry/ga2.py --cover-min 3.0 --out geometry/out/ga2_mixA   # Mix A shape search (~20 min)
 uv run --python 3.11 geometry/ga2.py --cover-min 4.5 --out geometry/out/ga2_mixB   # Mix B shape search (~20 min)
-uv run --python 3.11 geometry/mix_compare.py                                       # Mix A vs Mix B ring vs Mix B disc
+uv run --python 3.11 geometry/mix_compare.py --shrink 0.05                         # compare designs + print moulds
 uv run --python 3.11 --with pytest --with pymoo --with matplotlib --with "mujoco<3.3" pytest geometry -q   # tests
 ```
 
 Python 3.11 because MuJoCo (the physics engine for the landing simulation) has no package for Python 3.13 on macOS.
-Most STL files are not in the repo: the scripts regenerate them. The press moulds to print are kept
-(`geometry/out/moulds/`, and `pick_1_mould_half.stl` in each `geometry/out/ga2*/` scenario). Print each mould half twice.
+**Moulds to print for the final designs: [`geometry/out/print/`](geometry/out/print/print.md)** (Mix A ring and
+Mix B disc, sized to dry to 26 mm; print each mould half twice). Most other STL files are not in the repo: the
+scripts regenerate them.

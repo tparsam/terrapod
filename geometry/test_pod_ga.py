@@ -325,3 +325,14 @@ def test_squeeze_loads_every_lobe_tip_touching_the_board():
     # 4-lobe pod: one tip below and two above load it in three-point bending, where a central hole matters less
     ring = pg.Pod(27.39, 6, 6.85, 1.1, 5, 2.83, 1.02, 3.45)
     assert pg.squeeze_stress(pod) < pg.squeeze_stress(ring) / 2
+
+
+def test_print_moulds_leave_size_margin_after_drying():
+    import mix_compare as mc
+    small = pg.Pod(25.09, 6, 6.15, 0, 4, 2.99, 0.98, 3.4)
+    dried, mould = mc.print_scale(small, 26.0, 0.05)
+    assert dried.D == pytest.approx(26.0) and mould.D == pytest.approx(26.0 / 0.95)
+    assert dried.t_edge / small.t_edge == pytest.approx(26.0 / 25.09)       # scaled in every direction
+    assert (dried.n, dried.p) == (small.n, small.p)
+    big = pg.Pod(27.59, 6, 6.09, 0, 5, 2.99, 0.94, 3.42)                   # already over the margin: only shrink
+    assert mc.print_scale(big, 26.0, 0.05)[0] == big

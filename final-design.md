@@ -7,8 +7,8 @@ what we are building. Evidence lives in `research.md` and `prior-art.md`; models
 | Part | Status |
 |---|---|
 | §2 Seed format and placement | **Final (v1, 5 Nov 2026)**, from published studies. Counts and depths still to be confirmed by tray tests |
-| §3 Shape and morphology | **Chosen per mix (18 Nov)**: Mix A thin lobed ring, Mix B lobed disc (§3.0). Bench tests confirm |
-| §4 Materials | Starting recipes, to be tested |
+| §3 Shape and morphology | **Chosen per mix (18 Nov)**: Mix A thin lobed ring, Mix B lobed disc, both 26 mm after drying (§3.0). Bench tests confirm |
+| §4 Materials | **Chosen recipes (18 Nov)**, evidence-graded. Core clay level and date-palm fibre still to be tested |
 | §5 Manufacturing | Draft (press-mould method) |
 | §6 Validation | Planned (`geometry/TEST_PROTOCOL.md` plus germination trays) |
 
@@ -39,15 +39,16 @@ Sources: challengeon.atrc.ae/en/challenges/ntpc: brief, challenge statement, pha
 
 ## 1. The design in brief
 
-**One pod family, two shapes, one per seed mix.** Both are solid, pressed and biodegradable, about 25 mm
-across, with rounded lobes and a rounded rim that stop them rolling or standing on edge. Seeds sit in a
-**thin seed skin on both flat faces**, so whichever way the pod lands a seeded face touches the soil. A
-**seed-free core** of clay and date-palm fibre gives drop strength. Same recipe, same press, same seed skin;
-only the mould differs (§3).
+**One pod family, two shapes, one per seed mix.** Both are solid, pressed and biodegradable, **26 mm tip to
+tip after drying** (inside the 2.5 to 3 cm rule with a margin), with rounded lobes and a rounded rim that stop
+them rolling or standing on edge. Seeds sit in a **thin, low-clay seed skin on both flat faces**, so whichever
+way the pod lands a seeded face touches the soil. A **seed-free, high-clay core** gives drop strength. A
+**sand dust** keeps ants off and a thin **starch–CMC film** holds water. Same recipe, same press, same seed
+skin; only the mould differs (§3, §4).
 
-- **Mix A pod: thin lobed ring**, 6 mm thick, about 2.4 g. Its seeds are all small and sit in the skin, so
+- **Mix A pod: thin lobed ring**, 6.4 mm thick, about 2.7 g. Its seeds are all small and sit in the skin, so
   it needs no thick core. The hole catches water and blown sand and lets pods stack on a rod.
-- **Mix B pod: lobed disc, no hole**, 9 mm thick, about 3.8 g. The thickness gives the large *Calligonum*
+- **Mix B pod: lobed disc, no hole**, 9.4 mm thick, about 4.2 g. The thickness gives the large *Calligonum*
   seed its pocket in the middle of the core; without the hole it is about **10× harder to crack**.
 
 Mix A and Mix B pods can be dropped interleaved over the same ground, which gives all six species at a site
@@ -113,6 +114,7 @@ whole pod.**
 | *Stipagrostis* | Remove bristles (ask Nabat for cleaned seed); test a cold treatment |
 | *Panicum*, *Stipagrostis* | Optional priming; check it survives pressing and storage |
 | *Haloxylon* | Freshest seed, pressed as close to the drop as possible (loses viability fast) |
+| **All** | **Soak in 0.1 mM salicylic acid** (aspirin's active ingredient), then dry back before pressing. It didn't raise germination, but seedlings **survived and grew better in the field** (Pedrini et al. 2021, `prior-art.md` §3.3). Cheap, tiny amounts, and it targets survival, the weak point of pods. Skip for *Calligonum* until it is shown not to interfere with scarification |
 | All | Germination test of each seed batch before pressing |
 
 ---
@@ -172,6 +174,23 @@ scored on the same 200 random 3D landings and the same edge-on squeeze (crush) t
   as the reference). Then the drop and crush tests decide.
 - **Material cost stays trivial:** at the placeholder AED 3/kg, every design is under AED 0.015.
 
+**Print size: 26 mm after drying.** Every design above sits at exactly 25.0 mm, the bottom of the rule, and
+pressed clay shrinks as it dries (often 2 to 8%). A pod pressed at 25.0 mm would dry under 2.5 cm and break
+the rule. So each final design is scaled up evenly to **26 mm tip to tip after drying**, and the mould is
+enlarged by an assumed 5% drying shrinkage (placeholder). Press one test pod, measure it dry, and regenerate
+the moulds with the real value (`mix_compare.py --shrink`). Scaling keeps the shape, so the landing and crush
+rankings hold.
+
+| Print set (`geometry/out/print/`, print each twice) | Mould size | Dried pod: tip to tip / narrowest / thick | Dried mass |
+|---|---|---|---|
+| **Mix A ring** (`Mix_A_A_tip_to_tip_mould_half.stl`) | 27.4 mm | 26.0 / 21.2 / 6.4 mm, 6.2 mm hole | 2.69 g |
+| **Mix B disc** (`Mix_B_disc_A_tip_to_tip_mould_half.stl`) | 27.4 mm | 26.0 / 21.1 / 9.4 mm | 4.24 g |
+| Mix A ring, narrowest-width backup (`Mix_A_B_narrowest_25mm_…`) | 29.0 mm | 27.6 / 25.7 / 6.1 mm | 3.02 g |
+| Mix B disc, narrowest-width backup (`Mix_B_disc_B_narrowest_25mm_…`) | 28.8 mm | 27.4 / 25.6 / 9.0 mm | 4.42 g |
+
+The narrowest-width backups already measure 27.4 to 27.6 mm tip to tip, so only the shrinkage is added. Their
+narrowest width (25.6 to 25.7 mm) has a margin of under 1 mm, so check it on the dried test pods.
+
 **Model fix (18 Nov).** The squeeze model used to load a 5-lobe pod at only one of the two tips touching the
 top board, which bent it and made every odd-lobe design look too weak. It now loads both tips evenly
 (regression test in `test_pod_ga.py`; all 26 tests pass). The 4-lobe numbers and the genetic search (which
@@ -220,16 +239,39 @@ the backup.
 
 ---
 
-## 4. Materials (starting recipes; all biodegradable, no microplastics)
+## 4. Materials (chosen 18 Nov 2026; all biodegradable, non-toxic, no microplastics)
 
-| Layer | Starting recipe (by dry weight) | Why |
-|---|---|---|
-| **Sand dust** (outer) | Fine sand, dusted into the mould | Mould release and anti-ant coat |
-| **Seed skin** | About 20% clay, 65% fine sand, 10% compost, 5% starch | Low clay is easy for shoots to break through |
-| **Core** | About 50% clay, 40% sand, 2 to 3% date-palm fibre, 5% starch or CMC, ≤ 3% biochar | Drop strength; fibre stops cracks; little biochar, which weakens pods |
-| Optional film | Thin starch–CMC spray after drying | A film coat gave +88% establishment in the Mu Us; may cut dust |
+**The principle: germination and durability pull opposite ways, so the pod splits the jobs by layer.**
+Shoots break through low-clay mixes best (10% clay beat 55% in the field; small seeds did best at about 25%),
+but a pod needs high clay to survive a 15 m drop. And the pod only has to be strong **until it lands**: in
+the same field study, whether the pellet fell apart afterwards made no difference to establishment
+(Teichroew & Rew 2025). So: a **soft skin around the seeds**, a **hard core for the drop**, and a recipe
+that softens with the first rain.
 
-**Avoid:** PVAc binders, water crystals, and gypsum near *Cyperus* (salt-sensitive).
+| Layer | Recipe (by dry weight) | Job | Evidence (`prior-art.md`, `research.md`) | Grade |
+|---|---|---|---|---|
+| **Sand dust** (outside, < 0.3 mm) | Fine sand dusted into the mould | Mould release; keeps ants off | A sand coat cut harvester-ant predation in **48 of 53 species** (§9.7) | Good |
+| **Seed skin** (1.5 mm, both faces) | **20% clay**, 60% fine sand, **15% compost or vermicompost**, 5% starch | Easy for shoots to break; feeds and holds water for the seedling | Clay: Teichroew 2025, Évora thesis (§11.5). Compost: soil-to-vermicompost 2:1 best for sorghum seed balls; soil-only balls germinated worse (§11.5) | Good |
+| **Core** | **45% clay** (local red clay or kaolin), 47% sand, **1.5% date-palm fibre**, 5% starch, ≤ 1% date-palm biochar | Survives the drop and handling | Clay: 60% best in Brazil (§11.5). Starch safe; PVAc harmful (§11.5). **Fibre is untested in seed pods** (borrowed from earth bricks): treated as a hypothesis | Clay, starch: good. Fibre: **weak** |
+| **Film** (after drying) | Thin spray of **starch:CMC 80:20** | Holds water at the seed skin; cuts dust in the hopper | A thin outer film gave **+88%** establishment vs. +22% for pelleting alone in Chinese desert trials (§9.5); starch–CMC 80:20 holds about 17.5 g water per g and about 67% biodegraded in soil (§9.7). That trial's film may not have been starch–CMC | Good, with a caveat |
+| **Seeds** | Pre-treated per §2.4, including **0.1 mM salicylic acid** | Seedling survival | Pedrini et al. 2021 (§3.3) | Good |
+
+**Changes from the 5 Nov starting recipe:** salicylic acid added to the seed treatment; the starch–CMC film
+moved from optional to standard; biochar cut from ≤ 3% to ≤ 1% (it weakens pods, and biochar balls were "too
+fragile to use", Otago, §11.5), kept only for the local date-palm sustainability story; fibre cut to a 1.5%
+default because its benefit is unproven; skin compost raised from 10 to 15%; core clay set to 45%, mid-way
+between the two test levels.
+
+**Optional, not default:** chilli or neem in the sand dust if rodents are a problem at the sites (47 to 50%
+less eaten, §3.3); local desert soil as a microbe inoculant (helps only at high doses, §11.6; Phase 2).
+
+**Avoid:**
+- Polyacrylamide water crystals: microplastics (breaks the rules) and they made balls fragile.
+- PVAc and other synthetic glue binders: harmful to seeds.
+- Biochar above 1%: weakens the pod.
+- Activated carbon next to the seed: can lower emergence.
+- Gypsum in Mix A: *Cyperus* is salt-sensitive. (Gypsum is a good low-crumbling binder, so it could be tested
+  in the Mix B core.)
 
 ## 5. Manufacturing (press mould; both halves identical)
 
@@ -241,6 +283,9 @@ the backup.
 5. **Mix B only (disc mould, no centre pin):** press two scarified *Calligonum* seeds, lying flat and side
    by side, into the centre of the core in one half (≥ 3 mm from the rounded rim).
 6. Close (pegs into sockets), press for 30 s, trim the seam, ease out, dry in the shade for 48 to 72 h.
+7. Spray a thin **starch:CMC 80:20 film** over the dried pod and let it dry.
+
+Moulds: `geometry/out/print/` (sized for 26 mm after drying, §3.0).
 
 These steps double as the **assembly instructions ASPIRE needs** if it builds the carriers (timeline,
 Phase 3). At scale: a rotary tablet press with a centre pin and layered filling (see `research.md` §10).
@@ -254,6 +299,10 @@ Phase 3). At scale: a rotary tablet press with a centre pin and layered filling 
 | Seed density (trays) | ×0.5 · ×1 · ×2 | Seeds per pod |
 | *Calligonum* scarification (trays) | None · sandpaper · nick · hot water | Pre-treatment |
 | Storage (trays) | Fresh vs. stored dry 4 to 8 weeks | Whether coatings or priming fade |
+| Salicylic acid (trays) | With vs. without, 0.1 mM | Whether it helps our species, and survives pressing |
+| Film (trays) | With vs. without starch–CMC film | Whether the film helps here |
+| Shrinkage (bench, first) | One pod per mould: dried vs. mould diameter | The real `--shrink` value; regenerate moulds |
+| **Core recipe (bench)** | **Clay 40% vs. 55% × date-palm fibre 0 / 1.5 / 3%** (6 mixes; crush 20 discs each, per §9.7) | Core clay level, and whether fibre helps at all |
 | Bench (`geometry/TEST_PROTOCOL.md`) | Density, roll, fan, tumble, drying, soak, crush, 15 m drop on sand and firm ground | Shape and recipe |
 
 ## 7. Open questions
@@ -279,4 +328,6 @@ Phase 3). At scale: a rotary tablet press with a centre pin and layered filling 
 | 7 Nov 2026 | One mix per pod (default). Leaning towards one design family with a Mix A and a Mix B version | Brief wording; habitat match; workload with 12 days left |
 | 18 Nov 2026 | A different shape per mix is allowed: the rules leave shape free within 2.5 to 3 cm and do not require one design. Keep one family (same press, recipe, seed skin), with dimensions tuned per mix | §0 |
 | 18 Nov 2026 | **Mix A: thin lobed ring (6 mm, 2.4 g). Mix B: lobed disc, no hole (9 mm, 3.8 g, about 10× harder to crack)**. Both mixes in one pod: rejected | Per-mix genetic search + `mix_compare.py` (§3.0); §7 |
+| 18 Nov 2026 | **Final pods sized to 26 mm after drying**; moulds enlarged for an assumed 5% shrinkage | Every design sat at exactly 25.0 mm and would dry under the 2.5 cm rule (§3.0) |
+| 18 Nov 2026 | **Materials chosen**: low-clay skin + compost, 45% clay core, starch–CMC film standard, salicylic acid on seeds, biochar ≤ 1%, fibre 1.5% pending test | Evidence-graded table (§4) |
 | Next | Phase 1 deck (8 to 10 slides) from this doc; 5-shape comparison moves to Phase 2/3 work | §0 |
