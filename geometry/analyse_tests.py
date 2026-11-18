@@ -118,7 +118,7 @@ def main(argv=None):
     if dens:
         lines += ["", "## Re-run the search with your density", "",
                   f"`uv run geometry/pod_ga.py --density {np.mean(dens):.2f} --cost-per-kg <AED/kg from quotes>`"]
-    (out / "test_results.md").write_text("\n".join(lines) + "\n")
+    (out / "test_results.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
     return res
 

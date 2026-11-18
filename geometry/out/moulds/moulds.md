@@ -11,4 +11,4 @@ Print each file **twice** (both halves are the same part). Pod volume is what yo
 | `pick_5_mould_half.stl` | 25.00 / 6.01 / 10.83 / 2.15 / 5 / 3.00 / 0.87 | 4.746 | 41 x 41 x 10.6 (+3 pegs) |
 | `control_smooth_ring_mould_half.stl` | 25.02 / 6.00 / 7.69 / 0.20 / 0 / 0 / 1 | 3.681 | 41 x 41 x 7.0 (+3 pegs) |
 | `crush_test_disc_mould_half.stl` | 30 / 0 / 10 / 0 / 0 / 0 / 1 | 7.069 | 46 x 46 x 8.0 (+3 pegs) |
-| `pick_1_rounded_rim_mould_half.stl` | 25.02 / 6.00 / 7.69 / 0.20 / 4 / 2.98 / 0.96 | 2.822 | 41 x 41 x 7.0 (+3 pegs) |
+| `pick_1_rounded_rim_mould_half.stl` | 25.02 / 6.00 / 7.69 / 0.20 / 4 / 2.98 / 0.96, rim 2.50 | 2.643 | 41 x 41 x 7.0 (+3 pegs) |

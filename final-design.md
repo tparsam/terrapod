@@ -29,11 +29,11 @@ Sources: challengeon.atrc.ae/en/challenges/ntpc: brief, challenge statement, pha
 | Materials | Biodegradable, non-toxic, safe, no microplastics |
 | Cost | "targeting ≤ AED 0.4" per carrier, with cost drivers and assumptions. Not stated whether seed cost counts |
 | Habitat per mix | Not stated |
-| **Phase 1** (deadline **19 Nov 2026**) | Participation form + **8 to 10-slide PDF deck, max 10 MB, in English**. Deck must cover: (1) team and experience; (2) composition (seeds per species per carrier), dimensions, preparation, deployment and UAV fit; (3) past deployment evidence and success rate, with references; (4) germination data vs. adjacent reference sites; (5) cost per carrier ≤ AED 0.4; (6) sustainability and biodegradability; (7) production capacity and scale over 5 years; (8) readiness (prototype or a credible plan to make one) |
+| **Phase 1** (deadline **19 Nov 2026**; Rules clause 6 says "by 19 November" but the Phase 1 section says "submitted **before** 19 November 2026", no time zone, so **submit by end of 18 Nov UAE time**) | Participation form + **8 to 10-slide PDF deck, max 10 MB, in English**. Deck must cover: (1) team and experience; (2) composition (seeds per species per carrier), dimensions, preparation, deployment and UAV fit; (3) past deployment evidence and success rate, with references; (4) germination data vs. adjacent reference sites; (5) cost per carrier ≤ AED 0.4; (6) sustainability and biodegradability; (7) production capacity and scale over 5 years; (8) readiness (prototype or a credible plan to make one) |
 | Phase 1 scoring | Called "weighted" but no weights are published: quality and sustainability, germination, cost, UAV integration, production and scalability. Proposals must also say how they improve on existing seed carriers |
 | Phase 2 (Dec 2026) | Live short video pitch: rationale and development history, success rate, desert testing, team track record |
 | Phase 3 (Jan 2027 to Q2 2027) | Validation materials due **1 Jan 2027**: ready-to-deploy carriers, or seed mix plus assembly instructions for ASPIRE (Nabat supplies seed). UAV field trial Jan to Feb 2027, 8 to 10 weeks, uncontrolled desert. Scored on germination **vs. adjacent reference areas** and on whether Nabat's UAV can deploy it |
-| Prize and IP | US$50,000 and a possible partnership with Nabat. Winner keeps IP; sponsor gets a non-exclusive perpetual licence. Open-source parts must be disclosed. Entrants must be 18 or over |
+| Prize and IP | US$50,000 and a possible partnership with Nabat. Winner keeps IP; sponsor gets a non-exclusive perpetual licence. Open-source parts must be disclosed (clause 39). Entrants must be 18 or over. Also declare any relationship with ATRC, ASPIRE or Nabat staff (clause 4) and any other funding (clause 5); secret material may be marked "Confidential" (clause 42) |
 
 ---
 
@@ -82,13 +82,13 @@ whole pod.**
 | Choice | Evidence (`prior-art.md`) |
 |---|---|
 | Seeds near the surface, not the centre | Small seeds near a pellet's edge came up **28 times better** than in the centre; with seeds in the centre, bare seed beat the pellets (Lieurance et al. 2024, §11.3, §13) |
-| Seeds on the soil-facing face | Bottom of the pellet 70% emergence, bare seed 12 mm deep 57%, middle of the pellet 32% (Brown et al. 2023) |
+| Seeds on the soil-facing face | One species (*Jacksonia furcellata*): bottom of a pellet without activated carbon 70% emergence, bare seed 12 mm deep 57%, middle of a carbon pellet 32% (Brown et al. 2023, *Restoration Ecology* 31(1), doi:10.1111/rec.13784) |
 | **Both** faces seeded | The pod is symmetric, so one seeded face is always down; the other is a backup if the pod flips or is buried |
 | No hollow capsule | Encapsulation hurt germination in several studies; a hollow shell is weaker in a 15 m drop (§13) |
 | Not mixed through | Wastes seed in the core and on the sun-side face; no species gets its best depth. Kept as a **test arm** |
 | Thin skin, low clay | Thicker coats lower emergence; 10% clay beat 55% in the field; small seeds best at about 25% clay (§11.4, §11.5) |
-| Fine-sand outer dust | A sand coat cut harvester-ant predation in 48 of 53 species (§9.7) |
-| Prior art | Patented "seeds in a thin layer around an inert core" pills (US 5,389,115 / 5,623,781) |
+| Fine-sand outer dust | Adding a sand coat to mucilaginous seeds cut harvester-ant predation in 48 of 53 species (LoPresti et al. 2019, *Ecology*; natural coats on single seeds, so an extrapolation to our pod; §9.7) |
+| Prior art | Patented "seeds in a layer around an inert core" pills (US 5,623,781 for seeds; US 5,389,115 is the same method for spores; both Incotec) |
 
 ### 2.3 Two pod types (one seed mix per pod)
 
@@ -102,8 +102,8 @@ whole pod.**
 | | *Calligonum comosum* | 2, **scarified** | Core mid-plane, lying flat, side by side near the centre of the disc (in the ring version: inside two opposite lobes), ≥ 3 mm in from the rounded rim | About 2.5 to 4 mm cover each side | Prefers 2 to 4 cm (most a pod can give); large seeds cope best deep in a pellet |
 
 - Seed mass per pod: about 13 mg (A) and 23 mg (B), under 1% of the pod.
-- Counts aim for about 2 to 3 seedlings per pod at the 5 to 25% establishment typical worldwide; the tray
-  trial tests ×0.5, ×1 and ×2.
+- At the 5 to 25% establishment typical worldwide, these counts give about 2 to 9 seedlings per Mix A pod
+  (36 seeds) and about 1 to 3.5 per Mix B pod (14 seeds); the tray trial tests ×0.5, ×1 and ×2.
 - **Option if seed is costly:** put half the counts on each face.
 
 ### 2.4 Pre-treatment before pressing
@@ -250,10 +250,10 @@ that softens with the first rain.
 
 | Layer | Recipe (by dry weight) | Job | Evidence (`prior-art.md`, `research.md`) | Grade |
 |---|---|---|---|---|
-| **Sand dust** (outside, < 0.3 mm) | Fine sand dusted into the mould | Mould release; keeps ants off | A sand coat cut harvester-ant predation in **48 of 53 species** (§9.7) | Good |
+| **Sand dust** (outside, < 0.3 mm) | Fine sand dusted into the mould | Mould release; keeps ants off | Adding a sand coat to mucilaginous seeds cut harvester-ant predation in **48 of 53 species** (LoPresti et al. 2019, *Ecology*; natural coats on single seeds, so an extrapolation to our pod; §9.7) | Good |
 | **Seed skin** (1.5 mm, both faces) | **20% clay**, 60% fine sand, **15% compost or vermicompost**, 5% starch | Easy for shoots to break; feeds and holds water for the seedling | Clay: Teichroew 2025, Évora thesis (§11.5). Compost: soil-to-vermicompost 2:1 best for sorghum seed balls; soil-only balls germinated worse (§11.5) | Good |
 | **Core** | **45% clay** (local red clay or kaolin), 47% sand, **1.5% date-palm fibre**, 5% starch, ≤ 1% date-palm biochar | Survives the drop and handling | Clay: 60% best in Brazil (§11.5). Starch safe; PVAc harmful (§11.5). **Fibre is untested in seed pods** (borrowed from earth bricks): treated as a hypothesis | Clay, starch: good. Fibre: **weak** |
-| **Film** (after drying) | Thin spray of **starch:CMC 80:20** | Holds water at the seed skin; cuts dust in the hopper | A thin outer film gave **+88%** establishment vs. +22% for pelleting alone in Chinese desert trials (§9.5); starch–CMC 80:20 holds about 17.5 g water per g and about 67% biodegraded in soil (§9.7). That trial's film may not have been starch–CMC | Good, with a caveat |
+| **Film** (after drying) | Thin spray of **starch:CMC 80:20** | Holds water at the seed skin; cuts dust in the hopper | In a Mu Us desert trial a film over the pellet did "much better" than pelleting alone (+22%); the +88% figure could not be confirmed from the source, and that film was **Eudragit, a synthetic polymer**, over a superabsorbent pellet (Su et al. 2015, §9.5), so it is not evidence for starch–CMC. Starch–CMC 80:20 holds about 17.5 g water per g and about 67% biodegraded in soil (§9.7) | **Moderate**: water-holding and biodegradability shown; no field result for this film yet (film test, §6) |
 | **Seeds** | Pre-treated per §2.4, including **0.1 mM salicylic acid** | Seedling survival | Pedrini et al. 2021 (§3.3) | Good |
 
 **Changes from the 5 Nov starting recipe:** salicylic acid added to the seed treatment; the starch–CMC film

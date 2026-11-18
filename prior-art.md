@@ -29,7 +29,7 @@ What the evidence says overall:
 | 1 | **EAD + Dendra** (Abu Dhabi) | Drone seeding of native species in Al Dhafra, including Arta, Rimth and Thamam. 6.5M seeds over 320 ha. **Seed bags, not pods. No results published** | Same country and same species, but no pod | [Media Office](https://www.mediaoffice.abudhabi/en/environment/environment-agency-abu-dhabi-and-adq-partner-with-dendra-to-enhance-terrestrial-and-coastal-restoration-through-advanced-technologies/), [Zawya](https://www.zawya.com/en/special-coverage/zawya-green/environment-agency-abu-dhabi-disperses-65mln-native-seeds-using-drones-slc62u2s) |
 | 2 | **China, aerial seeding with pelleted and coated seeds** (Mu Us, Alxa, Taklimakan) | Decades of aircraft seeding of desert shrubs, including *Calligonum* and *Haloxylon* relatives, using coated or pelleted seed | Same idea, same plant groups, at huge scale | see §3.1 |
 | 3 | **Johnstone et al. 2026** (Arizona) | Seed balls in sphere, disc and cube shapes, different clay amounts, with nutrients or microbes, in arid field plots | The best controlled test of the design choices we're weighing | [Wiley](https://onlinelibrary.wiley.com/doi/10.1111/rec.70303) |
-| 4 | **Teichroew & Rew 2024** (Montana) | Clay pellets of 1.5 and **2.5 cm**, 10% vs 55% clay, greenhouse and field | **Same size as our pod** | [MSU](https://scholarworks.montana.edu/items/eaa7bf1d-012d-4d01-a43a-72ccceeebb35/full), [extension post](https://naturefilm.montana.edu/extension/invasiveplants/extension/monthly-weed-posts/2025-august-seed-pellets.html) |
+| 4 | **Teichroew & Rew 2025** (Montana) | Clay pellets of 1.5 and **2.5 cm**, 10% vs 55% clay, greenhouse and field | **Same size as our pod** | [MSU](https://scholarworks.montana.edu/items/eaa7bf1d-012d-4d01-a43a-72ccceeebb35/full), [extension post](https://naturefilm.montana.edu/extension/invasiveplants/extension/monthly-weed-posts/2025-august-seed-pellets.html) |
 | 5 | **Stock et al. 2020** (Pilbara, Australia) | Extruded pellets for **arid** mine sites, with native grass and shrubs | Arid, field-tested, mixed species | [ResearchGate](https://www.researchgate.net/publication/347547935_Field-Deployed_Extruded_Seed_Pellets_Show_Promise_for_Perennial_Grass_Establishment_in_Arid_Zone_Mine_Rehabilitation), [UWA](https://research-repository.uwa.edu.au/en/publications/field-deployed-extruded-seed-pellets-show-promise-for-perennial-g/) |
 | 6 | **CMU self-burying carrier** (*Nature* 2023) | Wooden carrier that drills itself into soil when wet. 80% success on flat ground | The best-known "advanced" carrier | [Nature](https://www.nature.com/articles/s41586-022-05656-3), [CMU](https://www.cmu.edu/news/stories/archives/2023/february/biodegradable-seed-carrier.html) |
 | 7 | **AirSeed, Flash Forest, Morfo, Ambipar** | Commercial drone seed pods, mostly for forests | Same product category, different climate | see §3.5 |
@@ -75,7 +75,7 @@ What the evidence says overall:
 | Study | Where | Key finding | What it means for us (our analysis) |
 |---|---|---|---|
 | **Johnstone et al. 2026**, *Restoration Ecology* | Arid US | Balls helped **emergence but not establishment**. **No difference by shape, clay amount, nutrients or microbes.** No long-term harm or benefit | Don't over-invest in fancy additives. Emergence is where pods help |
-| **Teichroew & Rew 2024**, *Restoration Ecology* | Semi-arid Montana | Greenhouse: seedlings came from 40% of pellets, and **2.5 cm pellets** were more likely to produce a seedling. Field: **10% clay pellets** gave the most seedlings (2.6 by season end, vs 1.2 for 55% clay and 1.0 for controls). How fast the pellet broke down didn't matter | **Less clay may be better in the field.** Supports our 2.5 cm size. Test low and high clay |
+| **Teichroew & Rew 2025**, *Restoration Ecology* e14349 (doi:10.1111/rec.14349; online Nov 2024) | Semi-arid Montana | Greenhouse: seedlings came from 40% of pellets, and **2.5 cm pellets** were more likely to produce a seedling. Field: **10% clay pellets** gave the most seedlings (2.6 by season end, vs 1.2 for 55% clay and 1.0 for controls). How fast the pellet broke down didn't matter | **Less clay may be better in the field.** Supports our 2.5 cm size. Test low and high clay |
 | **Stock et al. 2020**, *Frontiers Ecol Evol* | Arid Pilbara | A 1:1 topsoil and sandy waste pellet was best. **100% topsoil set hard and did worse.** Organic amendment **reduced** grass emergence. Only the grass survived; the shrubs emerged then died | Pods can set hard and trap seeds. Organic matter isn't always good. Shrubs are harder than grasses |
 | **Organic-enriched seed balls 2026**, *Plant and Soil* | Arid land | 10% organic gave 48 to 92% germination, vs under 10% for direct sowing | A big benefit is possible in arid land |
 | **Brazil landfill 2026** | Degraded site | **60% clay** was best for germination, survival and growth | Conflicts with Montana, so test it yourselves |
@@ -166,7 +166,7 @@ A 2024 review of drone seeding says companies rarely disclose their technology, 
 |---|---|---|---|
 | 1 | Pods help emergence, not long-term survival | Johnstone 2026, Stock 2020, NZ 2025 | Optimise for emergence in 8 to 10 weeks. Add one survival booster (salicylic acid?) |
 | 2 | Lab gains often vanish in the field | Berto 2024 | Test outdoors in real sand and sun |
-| 3 | Less clay can beat more clay | Teichroew 2024 (10% > 55%), vs Brazil (60% best) | Test 2 to 3 clay levels |
+| 3 | Less clay can beat more clay | Teichroew 2025 (10% > 55%), vs Brazil (60% best) | Test 2 to 3 clay levels |
 | 4 | Too much biochar or water crystals = fragile | Otago | Keep biochar low, or only in the core |
 | 5 | A pure clay skin adds strength | Ukrainian study | Outer bentonite layer for the drop |
 | 6 | Pods can set hard and trap seedlings | Stock 2020 (100% topsoil) | Include sand. Check seedlings can break out |
@@ -211,7 +211,7 @@ Nobody I found has published:
 ## 7. Reading list (in order)
 
 1. Johnstone et al. 2026: shape, clay, additives, emergence vs establishment ([Wiley](https://onlinelibrary.wiley.com/doi/10.1111/rec.70303))
-2. Teichroew & Rew 2024: 2.5 cm pellets, clay % ([MSU](https://scholarworks.montana.edu/items/eaa7bf1d-012d-4d01-a43a-72ccceeebb35/full))
+2. Teichroew & Rew 2025: 2.5 cm pellets, clay % ([MSU](https://scholarworks.montana.edu/items/eaa7bf1d-012d-4d01-a43a-72ccceeebb35/full))
 3. Su et al. 2017: coated desert shrub seeds for aerial sowing ([Europe PMC](https://europepmc.org/api/getPdf?pmcid=PMC5565517))
 4. Jarrar & El-Keblawy 2023: coating and scarification in drylands ([PubMed](https://pubmed.ncbi.nlm.nih.gov/37595910/))
 5. Stock et al. 2020: arid extruded pellets ([ResearchGate](https://www.researchgate.net/publication/347547935_Field-Deployed_Extruded_Seed_Pellets_Show_Promise_for_Perennial_Grass_Establishment_in_Arid_Zone_Mine_Rehabilitation))
@@ -258,8 +258,10 @@ not independently checked).
    seedlings against 1.2 for 55% clay. Their 2.5 cm pellets were more likely to produce seedlings,
    which supports our size. A Brazilian study found 60% clay best, so the right amount depends on
    the site. Test it.
-5. **In Chinese desert trials, a thin outer film coating beat pelleting alone** (+88% vs +22%
-   establishment for *Caragana* in the Mu Us). This is the most relevant new number for the pod's skin.
+5. **In Chinese desert trials, an outer film coating beat pelleting alone** (pelleting +22% seedling rate for
+   *Caragana* in the Mu Us; film-coated "much better", no figure in the abstract). The film was Eudragit, a
+   synthetic polymer, over an ethylcellulose and superabsorbent pellet, so it does not transfer directly to a
+   no-microplastics pod. Su et al. 2015, *J. Beijing Forestry Univ.* 37(10): 96–102.
 6. **Drop height affects germination** (EJFE 2026), so test seed viability after a 15 m drop, not
    just whether the pod stays whole.
 
@@ -302,7 +304,7 @@ success rate, which makes the irrigation question to Nabat even more important.
 
 | Source | Finding | Label | Link |
 |---|---|---|---|
-| Beijing Forestry University (Mu Us), *Caragana korshinskii* | Pelleting with a superabsorbent: **+22%** establishment. Adding an **outer film coating: +88%** | peer-reviewed | [BJFU](https://j.bjfu.edu.cn/en/article/doi/10.13332/j.1000-1522.20140453) |
+| Beijing Forestry University (Mu Us), *Caragana korshinskii* | Su et al. 2015: pelleting with ethylcellulose, attapulgite clay, talc and 10% superabsorbent: **+22%** seedling rate. A 10% **Eudragit film** over the pellet did "much better" (no figure in the abstract; the earlier +88% could not be confirmed). Eudragit and SAP are synthetic polymers | peer-reviewed | [BJFU](https://j.bjfu.edu.cn/en/article/doi/10.13332/j.1000-1522.20140453) |
 | Mu Us aerial sowing of four sand plants | Emergence low. Key controls: **about 0.5 cm sowing depth** and **more than 7.5 mm of water in one event** | peer-reviewed (older) | [Ecologica](https://www.ecologica.cn/stxb/article/pdf/1000-0933200608-2474-11) |
 | Inner Mongolia officials | Pelleted seed: about 15% better seedling survival, 50% less seed | press | [Beijing Review](https://www.bjreview.com/China/202407/t20240702_800370433.html) |
 | Ordos drones, 2025 | Pelleted seed by drone: about 15% better germination, 30% less seed | press | [China Daily](https://www.chinaservicesinfo.com/s/202509/11/WS68e9bc81498e3685503361ff/drones-power-desert-control-in-ordos.html) |
@@ -328,7 +330,7 @@ success rate, which makes the irrigation question to Nabat even more important.
 |---|---|---|---|---|
 | Starch–CMC hydrogel coating (*Sci Rep* 2025) | Best at 80:20 starch to CMC. About 17.5 g water per g; about 67% biodegraded in soil | A water-holding layer that meets the brief | peer-reviewed | [Sci Rep 2025](https://www.nature.com/articles/s41598-025-30594-1); related wheat-stalk superabsorbent: [RSC Adv 2025](https://pubs.rsc.org/en/content/articlehtml/2025/ra/d5ra00143a) |
 | Biodegradable hydrogels, general | How long they last in the field is **untested**; synthetic ones last 3 to 12 months | Don't over-claim water holding | press | [FAPESP](https://revistapesquisa.fapesp.br/en/combating-dry-land/) |
-| **Sand coating against ants** | A sand coat cut harvester-ant predation in **48 of 53 species** (natural mucilage-and-sand coats) | **A free anti-ant idea: dust the pod's skin with sand** | peer-reviewed | [AGRIS](https://agris.fao.org/search/en/records/65e012460f3e94b9e5defc78) |
+| **Sand coating against ants** | Adding a sand coat to mucilaginous seeds cut harvester-ant predation in **48 of 53 species** (California, near ant nests; matching sand colour made no difference, so it works as a barrier, not camouflage). A related study found binding seeds to the ground cut removal in 42 of 53 species | **A free anti-ant idea: dust the pod's skin with sand** | peer-reviewed | [LoPresti et al. 2019, *Ecology*](https://doi.org/10.1002/ecy.2809); related: [Pan et al. 2021](https://agris.fao.org/search/en/records/65e012460f3e94b9e5defc78) |
 | Repellent coatings (Taylor et al. 2020) | Chilli, neem or carbon: 47–50% less eaten; even a blank coating gave 99% avoidance in the lab | Already in §3.3; still the best rodent evidence | peer-reviewed | [Great Basin brief](https://greatbasinfirescience.org/research-publications/coat-seeds-to-deter-small-mammals-in-restoration-projects/) |
 | Pellet strength tests (ore and seed pelleting) | Standard practice: crush 20 pellets each and average; drop pellets repeatedly until they crack; tensile strength from crush load, diameter and thickness | Matches our crush-disc method; **crush 20, not 3**, for a robust number | patent / peer-reviewed | [USPTO](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/4802914), [PUCPR](https://periodicos.pucpr.br/estudosdebiologia/article/download/22778/21884/40131) |
 | UAE experts (El-Keblawy) | Reviews on coating and scarification (*Sci Total Environ* 2023) and priming (*Restoration Ecology* 2024). No 2025 paper found | Still the person to contact | peer-reviewed | [UAEU](https://research.uaeu.ac.ae/en/publications/seed-enhancement-technologies-for-sustainable-dryland-restoration/) |
@@ -340,7 +342,7 @@ success rate, which makes the irrigation question to Nabat even more important.
 | EAD sowed our species on **dune sand** in 2025 | Assume dune sand is likely (still ask Nabat). Drop-test mainly onto sand |
 | Shape doesn't change emergence (Johnstone, Schmuck) | Keep justifying the lobed ring on drop survival, rolling, cost and stacking, not on germination |
 | 10% clay beat 55% in the field; 2.5 cm pellets did well | Test a **low-clay mix (10 to 30%)** alongside the high-clay one. Get strength back with date-palm fibre and a binder |
-| An outer film coating gave +88% in the Mu Us | Add a **thin starch–CMC film** over the pod. It may also cut dust in the tumble test |
+| A (synthetic) outer film coating beat pelleting alone in the Mu Us | Test a **thin starch–CMC film** over the pod as a biodegradable stand-in. It may also cut dust in the tumble test |
 | Sand coats cut ant predation | **Roll the damp pod in fine sand** before drying. Cheap and natural |
 | Drop height affected germination | After the 15 m drop test, **germinate the seeds from dropped pods** against undropped ones |
 | Mu Us: emergence needs about 0.5 cm depth and more than 7.5 mm of water in one event | The irrigation answer from Nabat decides how much water-holding the pod needs |
@@ -403,7 +405,7 @@ Same evidence labels as §9: **[peer-reviewed]**, **[preprint]**, **[thesis]**, 
 | Country | Who / what | Results | Label | Links |
 |---|---|---|---|---|
 | **China, Inner Mongolia (Kubuqi, Ordos, Mu Us)** | Drones carry 40 to 100 kg of **pelleted** seed. Winter "snow seeding" trials drop seed before snowfall | Germination up about 15%, seed use down 30%. About 6 yuan per mu. No independent emergence data | press | [China Daily Ordos](https://regional.chinadaily.com.cn/ordosen/en/2025-09/11/c_1124753.htm), [2024 report](https://regional.chinadaily.com.cn/ordosen/en/2024-07/25/c_1007862.htm) |
-| China, Mu Us (see §9.5) | Pelleted *Caragana*: +22%, with a film coat +88%. Emergence needs about 0.5 cm depth and more than 7.5 mm of rain in one event | — | peer-reviewed | [BJFU](https://j.bjfu.edu.cn/en/article/doi/10.13332/j.1000-1522.20140453) |
+| China, Mu Us (see §9.5) | Pelleted *Caragana*: +22%; with a synthetic film coat, "much better". Emergence needs about 0.5 cm depth and more than 7.5 mm of rain in one event | — | peer-reviewed | [BJFU](https://j.bjfu.edu.cn/en/article/doi/10.13332/j.1000-1522.20140453) |
 | **Kazakhstan / Uzbekistan, Aral Sea** | Saxaul afforestation of the dried seabed: 475,000 ha in 2021–24, aiming for 1.1M ha. **Drone pilot with self-burying E-SEEDs** (Oct 2025). Uzbekistan sows saxaul from aircraft | Typical saxaul survival 20 to 30%; container seedlings reached 78%. Drone results not yet published | press / report | [Times of Central Asia](https://timesca.com/kazakhstan-to-use-innovative-drone-technology-for-aral-seabed-reforestation/), [CAREC](https://centralasiaclimateportal.org/publications/saxaul-vs-the-desert-when-a-seabed-becomes-a-forest-the-aral-region-restoration-experience/), [intellinews](https://www.intellinews.com/how-self-drilling-e-seeds-dropped-by-drones-can-mitigate-aral-sea-disaster-427030), [Daryo](https://daryo.uz/en/2024/01/09/uzbekistan-to-sow-seeds-of-saxaul-on-dry-bed-of-aral-sea-from-air) |
 | **Iran** | *Haloxylon* sand-dune fixation by **planting seedlings under oil mulch**. In one project, planting worked **3 times better than seeding** | No aerial seeding studies found in English | peer-reviewed | [Environmental Resources Research 2014](https://doaj.org/article/6075420e08e94fdaa6328d0df9df0a95), [Kashan (*Haloxylon* + *Calligonum comosum*)](https://agris.fao.org/search/en/records/64724d99e17b74d2224fc099) |
 | **Pakistan** | Ten Billion Tree Tsunami: 4M olive seed balls dropped from the air (2021) | Officials claim 70 to 80% seed-ball "success". No independent field study found | press | [24 News](https://www.24newshd.tv/1-Mar-2021/4m-olive-seed-balls-spread-in-isb-botanical-garden-via-aerial-spreading), [Dawn](https://dawn.com/news/1857385), [Gulf News](https://gulfnews.com/world/asia/pakistan/drones-to-help-pakistan-plant-millions-of-trees-1.61811858) |
@@ -664,7 +666,7 @@ Same evidence labels as earlier sections.
 4. **Thicker coats lower emergence** (Brazil, native trees), and a 2 cm seed ball beat 2.5 cm (*Vachellia*).
 5. **Industry has already patented a "seeds on the outside" design.** Seeds sit in a thin adhesive layer
    **around** an inert core, which is our "seed skin" idea. One version uses a water-soluble core so the
-   pill collapses and drops the seeds onto the soil (US 5,389,115 and US 5,623,781).
+   pill collapses and drops the seeds onto the soil (US 5,623,781 for seeds; US 5,389,115 applies the same method to spores).
 6. **No study directly compares "mixed through" with "surface layer"** inside a seed ball. Our tray test
    (ring mixed through vs. ring with a seed skin) would be new data.
 
@@ -674,14 +676,14 @@ Same evidence labels as earlier sections.
 |---|---|---|---|
 | **Lieurance, Mills, Tetu & Gallagher 2024**, *J. Applied Ecology* 61: 847–858 (30 Australian species) | Centre: bare seed generally beat pellets; bigger seeds coped better (R² = 0.32). **Edge: 28 times more emergence** for 10 small-seeded species; half matched bare seed | peer-reviewed | [Western Sydney](https://researchers.westernsydney.edu.au/en/publications/putting-seed-traits-into-pellets-using-seed-mass-data-to-improve-/), [BES](https://bes.brightminded.com/applied-ecology-resources/document/20240297498), [data](https://datadryad.org/dataset/doi:10.5061/dryad.m905qfv7h) |
 | Follow-up: "Morphological seed traits predict early performance of native species to pelletized seed enhancement technologies", *Plants* 2024 | Seed shape and size predict how a species copes with pelleting | peer-reviewed | [DOAJ](https://doaj.org/article/03b9b1736f0e44409148126863be4663) |
-| **Brown et al. 2023**, *Restoration Ecology* 31(1) | Bottom of pellet 70%; bare seed 12 mm deep 57%; middle of a carbon pellet 32% | peer-reviewed | [record](https://bvbvf1.bib-bvb.de/vufind/PrimoRecord/cdi_proquest_journals_2760398311) |
+| **Brown et al. 2023**, *Restoration Ecology* 31(1), doi:10.1111/rec.13784 (online 2022) | One species (*Jacksonia furcellata*). Bottom of a pellet without carbon 70%; bare seed 12 mm deep 57%; middle of a carbon pellet 32% | peer-reviewed | [record](https://bvbvf1.bib-bvb.de/vufind/PrimoRecord/cdi_proquest_journals_2760398311) |
 | Chaieb & Fraser 2026, *Ecological Solutions and Evidence* (temperate forest; dataset) | Title: "Seed encapsulation improves early recruitment…". Compares a spherical capsule with a cube pod, separating germination from predation. Results not read | peer-reviewed (data) | [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.rv15dv4pk) |
 | Ontario black spruce report | **Encapsulation hurt germination; pelleting didn't** | report | **link to verify**: found via search summary; the page holding this finding wasn't confirmed ([candidate](https://scielo.br/j/cr/a/JNyGzvy4T9PM457Z3Yqnxjn/abstract/?lang=en)) |
 | Shallot true seed | Uncoated seed beat encapsulated seed | peer-reviewed | [MAB Journal](https://jms.mabjournal.com/index.php/mab/article/view/2014) |
 | Banana synthetic seeds | Single-layer beads 80% conversion; double-layer and hollow not better | peer-reviewed | [UniPi](https://arpi.unipi.it/handle/11568/87238) |
 | Brazil, native trees: pellet thickness | Thicker coat, lower emergence | peer-reviewed | [IBICT](https://oasisbr.ibict.br/vufind/Record/UFLA_9fa03dab6b889364e49b1bc6dab1651f) |
 | Madsen et al. 2016 (extruded pellets) | Seeds spread through a swelling pellet: 2.3 to 10 times emergence in silt loam (channels open for shoots) | peer-reviewed | [Native Plants Journal](https://npj.uwpress.org/node/1662) |
-| Patents US 5,389,115 / US 5,623,781 ("pills or pellets containing seeds and inert carrier") | **Seeds in a thin adhesive layer around an inert core**; a water-soluble core makes the pill collapse and spread seeds onto the soil | patent | [5,389,115](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5389115), [5,623,781](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5623781) |
+| Patents US 5,623,781 ("pills or pellets containing seeds and inert carrier material") and US 5,389,115 (same method, "genetic material" such as spores); Incotec, inventor R. J. Legro | **Seeds in a thin adhesive layer around an inert core**; a water-soluble core makes the pill collapse and spread seeds onto the soil | patent | [5,389,115](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5389115), [5,623,781](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/5623781) |
 | Patent US 3,600,830 ("hollow pellets for seed") | Hollow-pellet concept exists; no performance data | patent | [Google Patents](https://patents.google.com/patent/US3600830A/en) |
 | Seed balls in practice (Arizona; UC extension) | Seeds germinate inside the clay, and the clay dissolves later. More seeds per ball helped in one trial, made no difference in another | extension | [UA az1937](https://extension.arizona.edu/sites/extension.arizona.edu/files/pubs/az1937-2021.pdf), [UC ANR](https://ucanr.edu/node/129773) |
 
@@ -690,7 +692,7 @@ Same evidence labels as earlier sections.
 | Species | Evidence | Best depth | Placement in the pod | Link |
 |---|---|---|---|---|
 | ***Panicum turgidum*** | Emergence **highest at 0 cm**, falling as depth increases; germinates much better with its **flat side on wet soil** | Surface | Skin, flat side down, right at the face | [Qatar Univ.](https://qspace.qu.edu.qa/handle/10576/10162), [Britannica](https://www.britannica.com/plant/Panicum-turgidum) |
-| ***Cyperus conglomeratus*** | 84% germination of fresh seed; **germinates better in light than dark**; emerges well on disturbed dunes after rain | Surface | Skin, at the face, uncovered or under a very thin sand dust | [UAEU thesis](https://scholarworks.uaeu.ac.ae/all_theses/651) |
+| ***Cyperus conglomeratus*** | 84% germination of fresh seed (**to verify** in the thesis PDF before quoting: core.ac.uk/download/230628071.pdf); **germinates better in light than dark**; emerges well on disturbed dunes after rain | Surface | Skin, at the face, uncovered or under a very thin sand dust | [UAEU thesis](https://scholarworks.uaeu.ac.ae/all_theses/651) |
 | ***Eremobium aegyptiacum*** | No species study found. Desert mustards differ: some need light, others (*Aethionema*) are **light-inhibited** and germinate only when covered | Unknown: 0 to 2 mm | Skin. **Tray-test light vs. dark** | [Aethionema study](https://pure.mpg.de/pubman/item/item_3049535_2/component/file_3049537/erz146.pdf), [Britannica: light](https://www.britannica.com/science/seed-plant-reproductive-part/Ecological-role-of-light) |
 | ***Stipagrostis plumosa*** | Feathery bristles drag the seed downwind until it settles in the lee of a dune, where sand covers it; related grasses emerge best from 0.5 to 2 cm | About 0.5 to 2 cm in soil | Skin, slightly deeper (1 to 2 mm), seed with bristles removed | **link to verify** ([candidate](https://link.springer.com/article/10.1023/B:PLSO.0000020971.66784.fc)) |
 | ***Haloxylon salicornicum*** | Related *Haloxylon*: best at **0.5 to 1 cm with about 20 mm of water**; 2 cm best for *H. ammodendron*; 6 cm halves germination; shallow burial helps seedlings survive | 0.5 to 2 cm | Skin, 1 to 2 mm, plus sand cover after landing | [Jungar Basin](https://www.aminer.org/pub/5fdd5273d4cced0904859067/effect-of-water-supply-and-sowing-depth-on-seedling-emergence-in-two), [Ecol. Research](https://zendy.io/title/10.1111/1440-1703.1269), [Caspian J.](https://cjes.guilan.ac.ir/article_1061.html) |

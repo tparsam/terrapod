@@ -68,7 +68,7 @@ def write_print_set(finals, dried_min, shrink):
         lines.append(f"| `{f}` | {name.replace('_', ' ')} | {mould.D:.1f} / {mould.hole:.1f} / "
                      f"{mould.t_edge + 2 * mould.dome:.1f} | {dried.D:.1f} / {ga2.narrowest_width_mm(dried):.1f} / "
                      f"{dried.hole:.1f} / {dried.t_edge + 2 * dried.dome:.1f} | {mass:.2f} |")
-    (out / "print.md").write_text("\n".join(lines) + "\n")
+    (out / "print.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 
 
@@ -97,7 +97,7 @@ def main(argv=None):
              "| " + " | ".join(cols) + " |", "|---" * len(cols) + "|"]
     for r in rows:
         lines.append("| " + " | ".join(v if isinstance(v, str) else f"{v:.2f}" for v in r.values()) + " |")
-    (OUT / "mix_designs.md").write_text("\n".join(lines) + "\n")
+    (OUT / "mix_designs.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
     write_print_set({k.replace(", ", "_").replace(" ", "_"): designs[k] for k in
                      ("Mix A, A_tip_to_tip", "Mix B disc, A_tip_to_tip", "Mix A, B_narrowest_25mm",
