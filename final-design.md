@@ -6,7 +6,7 @@ what we are building. Evidence lives in `research.md` and `prior-art.md`; models
 
 | Part | Status |
 |---|---|
-| §2 Seed format and placement | **Final (v1, 5 Nov 2026)**. Counts and depths confirmed by tray tests |
+| §2 Seed format and placement | **Final (v1, 5 Nov 2026)**, from published studies. Counts and depths still to be confirmed by tray tests |
 | §3 Shape and morphology | **Chosen per mix (18 Nov)**: Mix A thin lobed ring, Mix B lobed disc (§3.0). Bench tests confirm |
 | §4 Materials | Starting recipes, to be tested |
 | §5 Manufacturing | Draft (press-mould method) |
