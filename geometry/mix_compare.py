@@ -44,7 +44,7 @@ def main():
     global SQ_LEAD
     SQ_LEAD = pg.squeeze_stress(ga2.LEAD)
     landings = w3.random_landings(200, seed=7)
-    designs = {"current lead": ga2.LEAD}
+    designs = {"current lead": ga2.LEAD, "old backup (5 lobes)": pick1(OUT / "ga2" / "B_narrowest_25mm")}
     for scen in ga2.SCENARIOS:
         designs[f"Mix A, {scen}"] = pick1(OUT / "ga2_mixA" / scen)
         ring = pick1(OUT / "ga2_mixB" / scen)

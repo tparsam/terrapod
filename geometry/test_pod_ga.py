@@ -311,3 +311,17 @@ def test_search_counts_a_pod_still_moving_at_the_time_limit_as_rolled_away():
     d, edge = ga2.travel_and_edge(runs, t_max=2.0, cap_m=1.0)
     assert list(d) == [10.0, 100.0, 5.0]
     assert edge == pytest.approx(100 / 3)
+
+
+def test_squeeze_loads_every_lobe_tip_touching_the_board():
+    # A 5-lobe pod touches the top board at two tips (one at the bottom). The load must be shared
+    # by both, mirror-symmetric, or the model bends the pod and reports it far too weak.
+    pod = pg.Pod(27.39, 0, 6.85, 1.1, 5, 2.83, 1.02, 3.45)
+    nodes, _, _ = pg.plane_mesh(pod, *pg.FINE)
+    top = pg.board_nodes(nodes, top=True)
+    assert abs(nodes[top, 0].sum()) < 1e-4 and (nodes[top, 0] > 0).any() and (nodes[top, 0] < 0).any()
+    assert abs(nodes[pg.board_nodes(nodes, top=False), 0].sum()) < 1e-4
+    # the solid disc is clearly stronger than the same outline with a hole. Only ~2.5x, not the ~10x of a
+    # 4-lobe pod: one tip below and two above load it in three-point bending, where a central hole matters less
+    ring = pg.Pod(27.39, 6, 6.85, 1.1, 5, 2.83, 1.02, 3.45)
+    assert pg.squeeze_stress(pod) < pg.squeeze_stress(ring) / 2

@@ -7,7 +7,7 @@ what we are building. Evidence lives in `research.md` and `prior-art.md`; models
 | Part | Status |
 |---|---|
 | §2 Seed format and placement | **Final (v1, 5 Nov 2026)**. Counts and depths confirmed by tray tests |
-| §3 Shape and morphology | **Under review**. Next: compare the 5-shape shortlist (§3.3) |
+| §3 Shape and morphology | **Chosen per mix (18 Nov)**: Mix A thin lobed ring, Mix B lobed disc (§3.0). Bench tests confirm |
 | §4 Materials | Starting recipes, to be tested |
 | §5 Manufacturing | Draft (press-mould method) |
 | §6 Validation | Planned (`geometry/TEST_PROTOCOL.md` plus germination trays) |
@@ -39,11 +39,19 @@ Sources: challengeon.atrc.ae/en/challenges/ntpc: brief, challenge statement, pha
 
 ## 1. The design in brief
 
-A **solid, pressed, biodegradable ring with rounded lobes**, about 25 mm across and 8 mm thick, weighing
-about 3.2 g. Seeds sit in a **thin seed skin on both flat faces**, so whichever way the pod lands a seeded
-face touches the soil. A **seed-free core** of clay and date-palm fibre gives drop strength. The largest
-seed (*Calligonum*) sits in the middle of the core. The lobes and the rounded rim stop it rolling or
-standing on edge; the hole catches water, holds blown sand and lets pods stack on a rod in the drone.
+**One pod family, two shapes, one per seed mix.** Both are solid, pressed and biodegradable, about 25 mm
+across, with rounded lobes and a rounded rim that stop them rolling or standing on edge. Seeds sit in a
+**thin seed skin on both flat faces**, so whichever way the pod lands a seeded face touches the soil. A
+**seed-free core** of clay and date-palm fibre gives drop strength. Same recipe, same press, same seed skin;
+only the mould differs (§3).
+
+- **Mix A pod: thin lobed ring**, 6 mm thick, about 2.4 g. Its seeds are all small and sit in the skin, so
+  it needs no thick core. The hole catches water and blown sand and lets pods stack on a rod.
+- **Mix B pod: lobed disc, no hole**, 9 mm thick, about 3.8 g. The thickness gives the large *Calligonum*
+  seed its pocket in the middle of the core; without the hole it is about **10× harder to crack**.
+
+Mix A and Mix B pods can be dropped interleaved over the same ground, which gives all six species at a site
+without putting both mixes in one pod (§7).
 
 ---
 
@@ -90,7 +98,7 @@ whole pod.**
 | | *Stipagrostis plumosa* | 6 (3 per face), bristles removed | Bottom of the skin | 1 to 1.5 mm | Related grasses best at 0.5 to 2 cm |
 | **Mix B** | *Panicum turgidum* | 6 (3 per face), **flat side outward** | Skin, at the surface | 0 mm | Emergence highest at the surface; flat side on wet soil |
 | | *Haloxylon salicornicum* | 6 (3 per face), freshest seed | Bottom of the skin | 1 to 1.5 mm | Related *Haloxylon* best at 0.5 to 2 cm |
-| | *Calligonum comosum* | 2, **scarified** | Core mid-plane, lying flat, inside two opposite lobes, ≥ 3 mm in from the rounded rim | About 2.5 to 4 mm cover each side | Prefers 2 to 4 cm (most a pod can give); large seeds cope best deep in a pellet |
+| | *Calligonum comosum* | 2, **scarified** | Core mid-plane, lying flat, side by side near the centre of the disc (in the ring version: inside two opposite lobes), ≥ 3 mm in from the rounded rim | About 2.5 to 4 mm cover each side | Prefers 2 to 4 cm (most a pod can give); large seeds cope best deep in a pellet |
 
 - Seed mass per pod: about 13 mg (A) and 23 mg (B), under 1% of the pod.
 - Counts aim for about 2 to 3 seedlings per pod at the 5 to 25% establishment typical worldwide; the tray
@@ -109,9 +117,67 @@ whole pod.**
 
 ---
 
-## 3. Shape and morphology: UNDER REVIEW (next session)
+## 3. Shape and morphology: one shape per mix (18 Nov 2026)
 
-### 3.1 Current candidates
+### 3.0 Mix-wise designs (current)
+
+The earlier search gave both mixes the same 4 mm *Calligonum* pocket rule. Only Mix B carries *Calligonum*,
+so the 3D genetic search (`geometry/ga2.py`) was re-run once per mix with its own rule:
+
+- **Mix A:** pocket ≥ 3 mm, so the pod is ≥ 6 mm thick: a 1.5 mm seed skin on each face plus a ≥ 3 mm core.
+- **Mix B:** pocket ≥ 4.5 mm, so ≥ 9 mm thick: a *Calligonum* seed about 3 mm thick (assumed; the brief gives
+  2 to 6 mm) lying flat, with ≥ 3 mm of cover all round.
+
+The Mix B winner was then also scored as a **lobed disc** (same outline, no hole). All designs below were
+scored on the same 200 random 3D landings and the same edge-on squeeze (crush) test
+(`geometry/mix_compare.py`, results in `geometry/out/mix_designs.md`).
+
+**If "diameter" means tip to tip (main reading)**
+
+| | Current lead (both mixes) | **Mix A: thin lobed ring** | Mix B ring | **Mix B: lobed disc** |
+|---|---|---|---|---|
+| Size, lobes | 25.0 mm, 4 | 25.1 mm, 4 | 25.0 mm, 4 | 25.0 mm, 4 |
+| Thickness | 8.1 mm | **6.2 mm** | 9.0 mm | **9.0 mm** |
+| Hole | 6 mm | 6 mm | 6 mm | **none** |
+| Rounded rim | 2.5 mm | 3.4 mm | 3.5 mm | 3.5 mm |
+| Mass (1.2 g/cm³ placeholder) | 3.17 g | **2.42 g** | 3.48 g | 3.79 g |
+| Median travel after landing | 12.6 cm | **11.3 cm** | 12.9 cm | 13.5 cm |
+| Rests on edge | 0.5% | 0.5% | 0.5% | 2.0% |
+| Crush load (lead = 1, same mix) | 1.00 | 0.78 | 1.13 | **10.6** |
+| Narrowest width | 20.4 mm | 20.5 mm | 20.3 mm | 20.3 mm |
+| Mould | | `out/ga2_mixA/A_tip_to_tip/pick_1_mould_half.stl` | `out/ga2_mixB/A_tip_to_tip/pick_1_mould_half.stl` | `out/ga2_mixB/A_tip_to_tip/disc_version_mould_half.stl` |
+
+**If the narrowest width must be ≥ 25 mm (backup reading):** 5 lobes, 27.4 to 27.6 mm tip to tip
+
+| | Old backup (both mixes) | **Mix A ring** | Mix B ring | **Mix B disc** |
+|---|---|---|---|---|
+| Thickness | 7.9 mm | 6.1 mm | 9.0 mm (domed) | 9.0 mm (domed) |
+| Mass | 3.95 g | 3.02 g | 4.14 g | 4.42 g |
+| Median travel | 12.1 cm | 11.3 cm | 12.7 cm | 12.8 cm |
+| Rests on edge | 1.5% | 0.5% | 1.0% | 1.0% |
+| Crush load (lead = 1) | 1.44 | 1.11 | 1.36 | 3.47 |
+| Mould (`out/…`) | `ga2/B_narrowest_25mm/pick_1_…` | `ga2_mixA/B_narrowest_25mm/pick_1_…` | `ga2_mixB/B_narrowest_25mm/pick_1_…` | `ga2_mixB/B_narrowest_25mm/disc_version_…` |
+
+**Decision**
+
+- **Mix A → thin lobed ring.** It is 24% lighter than the current lead, travels least, and keeps the hole for
+  catching water and stacking on a rod. Its risk is strength: in the tip-to-tip version it cracks at 0.78× the
+  lead's load. If the firm-ground drop test cracks it, fall back to the current lead (8 mm), which costs
+  0.75 g more.
+- **Mix B → lobed disc.** It is 9% heavier than the Mix B ring and travels about the same, but it is **10× harder
+  to crack** (3.5× in the 5-lobe version). That matters for the heaviest, most valuable mix and for the firm
+  gravel plains where *Haloxylon* grows. The *Calligonum* pocket moves to the centre of the disc, where the
+  cover is deepest. What it gives up: no hole for catching water, and it stacks in a tube rather than on a rod.
+- **Print all four** for the bench tests (both rings, the Mix B ring as the disc's control, the current lead
+  as the reference). Then the drop and crush tests decide.
+- **Material cost stays trivial:** at the placeholder AED 3/kg, every design is under AED 0.015.
+
+**Model fix (18 Nov).** The squeeze model used to load a 5-lobe pod at only one of the two tips touching the
+top board, which bent it and made every odd-lobe design look too weak. It now loads both tips evenly
+(regression test in `test_pod_ga.py`; all 26 tests pass). The 4-lobe numbers and the genetic search (which
+uses the impact model) did not change.
+
+### 3.1 Earlier candidates (one shape for both mixes, 3 Nov)
 
 | | Lead (if "diameter" = tip to tip) | Backup (if the narrowest width must be ≥ 25 mm) |
 |---|---|---|
@@ -133,7 +199,7 @@ lobes beat pie-crust crimps** → 3D test: up-and-down waves add nothing on top 
 on edge in 25% of landings, **a rounded rim fixes it** → genetic search v2 (3D) confirms the lead and finds
 the backup.
 
-### 3.3 To revisit next session
+### 3.3 To revisit (Phase 2 work, after the bench tests)
 
 - Lobe count, depth and profile: lobe depth sat at its 3 mm limit in both searches.
 - Hole size: sat at its 6 mm minimum. Trade water catch and rod-stacking against strength (rings are much
@@ -141,7 +207,7 @@ the backup.
 - Thickness and doming versus the *Calligonum* pocket (cover sat at its 4 mm minimum) and the seed skin.
 - How the seed skin (§2) and its lower-clay recipe change strength and the stress results.
 - Rim rounding width (2.5 vs 3.5 mm).
-- **Mix A vs. Mix B (leaning, 7 Nov):** one design family, two versions. Same press method, lobes,
+- **Settled 18 Nov (§3.0), kept for the record. Mix A vs. Mix B (leaning, 7 Nov):** one design family, two versions. Same press method, lobes,
   rounded rim, seed skin and recipe; only dimensions change. Mix A: current lead (about 8 mm, 3.2 g).
   Mix B: thicker lobed ring (about 10 to 11 mm) or a lobed disc with no hole, for the *Calligonum* pocket
   and strength on gravel. Decide after Nabat says which mix goes to which ground, and after the bench tests.
@@ -172,8 +238,8 @@ the backup.
    *Panicum*, flat side down).
 3. Press about 1.5 mm of **skin mix** over them; add the deeper seeds (*Stipagrostis* or *Haloxylon*).
 4. Fill each half with **core mix** to just proud of the parting line.
-5. **Mix B only:** press one scarified *Calligonum* seed, lying flat, into the core of one half inside a
-   lobe (≥ 3 mm from the rounded rim), and one in the opposite lobe.
+5. **Mix B only (disc mould, no centre pin):** press two scarified *Calligonum* seeds, lying flat and side
+   by side, into the centre of the core in one half (≥ 3 mm from the rounded rim).
 6. Close (pegs into sockets), press for 30 s, trim the seam, ease out, dry in the shade for 48 to 72 h.
 
 These steps double as the **assembly instructions ASPIRE needs** if it builds the carriers (timeline,
@@ -193,9 +259,11 @@ Phase 3). At scale: a rotary tablet press with a centre pin and layered filling 
 ## 7. Open questions
 
 - How Nabat measures diameter (picks the lead or the backup shape).
-- Whether a pod may carry both mixes (default: **no**, one mix per pod; the brief defines two separate mixes,
-  they likely suit different habitats, and the field test likely scores each mix); whether seed cost counts
-  toward AED 0.40.
+- **Both mixes in one pod: no (18 Nov).** The rules do not forbid it, but *Calligonum* needs a thick pod and the
+  surface seeds a thin one; six species in one 25 mm spot crowd each other; the field trial supplies carriers
+  "with the specified seed mix"; and every pod would carry about 36 mg of seed. Drop Mix A and Mix B pods
+  interleaved instead.
+- Whether seed cost counts toward AED 0.40.
 - Drone dispenser type, ground type at the sites, irrigation.
 - Final seeds-per-pod counts, after the density trial.
 
@@ -210,4 +278,5 @@ Phase 3). At scale: a rotary tablet press with a centre pin and layered filling 
 | **5 Nov 2026** | **Seed skin on both faces, seed-free core, *Calligonum* in the core; one mix per pod** | §2 above |
 | 7 Nov 2026 | One mix per pod (default). Leaning towards one design family with a Mix A and a Mix B version | Brief wording; habitat match; workload with 12 days left |
 | 18 Nov 2026 | A different shape per mix is allowed: the rules leave shape free within 2.5 to 3 cm and do not require one design. Keep one family (same press, recipe, seed skin), with dimensions tuned per mix | §0 |
+| 18 Nov 2026 | **Mix A: thin lobed ring (6 mm, 2.4 g). Mix B: lobed disc, no hole (9 mm, 3.8 g, about 10× harder to crack)**. Both mixes in one pod: rejected | Per-mix genetic search + `mix_compare.py` (§3.0); §7 |
 | Next | Phase 1 deck (8 to 10 slides) from this doc; 5-shape comparison moves to Phase 2/3 work | §0 |

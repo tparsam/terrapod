@@ -206,12 +206,18 @@ def squeeze_stress(pod, exclude=0.005, mesh=FINE):
     """Peak principal tension (Pa) per newton when the pod is squeezed edge-on between two flat
     boards, as in the crush test. Measured tensile strength / this = predicted crack load (N)."""
     nodes, tris, thick = plane_mesh(pod, *mesh)
-    order = np.argsort(nodes[:, 1])
-    bot, top = order[:3], order[-3:]
+    bot, top = board_nodes(nodes, top=False), board_nodes(nodes, top=True)
     f = np.zeros(2 * len(nodes))
-    f[2 * top + 1] = -1 / 3
-    sig = solve_plane_stress(nodes, tris, thick, f, np.concatenate([2 * bot, 2 * bot + 1, [2 * top[-1]]]))
-    return _peak_tension(nodes, tris, sig, [bot[0], top[-1]], exclude)
+    f[2 * top + 1] = -1 / len(top)
+    sig = solve_plane_stress(nodes, tris, thick, f, np.concatenate([2 * bot, 2 * bot + 1, [2 * top[0]]]))
+    return _peak_tension(nodes, tris, sig, [*bot, *top], exclude)
+
+
+def board_nodes(nodes, top, tol=1e-5):
+    """Nodes touching a flat board pressed on the bottom or top: every node within tol (m) of the extreme,
+    so an odd-lobe pod is held at both of the tips that touch one board, not at one of them."""
+    y = nodes[:, 1] * (1 if top else -1)
+    return np.flatnonzero(y >= y.max() - tol)
 
 
 def _peak_tension(nodes, tris, sig, contacts, exclude):

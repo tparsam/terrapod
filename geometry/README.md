@@ -208,3 +208,30 @@ re-scored on 200 landings with the fine-mesh FEM. Results: `out/ga2/A_tip_to_tip
    rolled away (1 m). That's a fair penalty, since rocking for 2 s is bad behaviour. The final check
    of the picks keeps the full, uncapped 4 s simulation. Scoring now takes 3.2 s per design instead of
    5.5 s, so a full run is about 50 minutes. The results above came from the slower exact run and stand.
+
+## Mix-wise designs (18 Nov 2026)
+
+Each seed mix gets its own pocket rule: Mix A has no *Calligonum*, so `--cover-min 3.0` (≥ 6 mm thick: two
+1.5 mm seed skins plus a ≥ 3 mm core); Mix B `--cover-min 4.5` (≥ 9 mm: a ~3 mm *Calligonum* seed with
+≥ 3 mm of cover). `mix_compare.py` then scores each Mix B pick as a lobed disc too (same outline, no hole),
+all on the same 200 landings and the same squeeze test. Results: `out/mix_designs.md`; decision in
+`../final-design.md` §3.0.
+
+```bash
+uv run --python 3.11 geometry/ga2.py --cover-min 3.0 --out geometry/out/ga2_mixA   # ~25 min on 10 cores
+uv run --python 3.11 geometry/ga2.py --cover-min 4.5 --out geometry/out/ga2_mixB   # ~25 min (75 min on a busy machine)
+uv run --python 3.11 geometry/mix_compare.py                                       # ~1.5 min
+```
+
+| Tip to tip | Thick | Hole | Mass | Median travel | On edge | Crush load (lead = 1) |
+|---|---|---|---|---|---|---|
+| Current lead | 8.1 mm | 6 mm | 3.17 g | 12.6 cm | 0.5% | 1.00 |
+| **Mix A ring** | 6.2 mm | 6 mm | 2.42 g | 11.3 cm | 0.5% | 0.78 |
+| Mix B ring | 9.0 mm | 6 mm | 3.48 g | 12.9 cm | 0.5% | 1.13 |
+| **Mix B disc** | 9.0 mm | none | 3.79 g | 13.5 cm | 2.0% | **10.6** |
+
+**Squeeze-model fix.** `squeeze_stress` used to load the 3 highest mesh nodes. A pod with an odd number of
+lobes touches the top board at two tips, so the load landed unevenly on them, bent the pod, and made it look
+far too weak (a 5-lobe disc came out barely stronger than the same ring). `board_nodes` now loads every node
+within 0.01 mm of each board, evenly. The 4-lobe results and the genetic search (impact model) are unchanged;
+the old 5-lobe backup's crush load rises to 1.44× the lead's.
