@@ -193,10 +193,10 @@ colons or full stops.
      rounded lobes and a rounded rim; in 200 simulated landings it ended on its edge 0.5% of the time
      (25% without the rounded rim).**
   3. **Eaten before they sprout.** Harvester ants and rodents take exposed seed. **TerraPod: a fine-sand outer
-     dust, which cut ant predation in 48 of 53 species.**
+     dust: a sand coat cut ant predation in 48 of 53 species.**
 - Left side label: `28× better emergence near the surface`
 - Right side label: `How TerraPod improves on existing carriers`
-- Credit line: `Sources: Lieurance et al. 2024; Brown et al. 2023; sand-coat ant study (see final-design.md §2, prior-art.md §9.7)`
+- Credit line: `Sources: Lieurance et al. 2024; Brown et al. 2023; LoPresti et al. 2019, Ecology (see final-design.md §2, prior-art.md §9.7)`
 
 ### Slide 3: Two pods, one production line (L3, Leaf)
 
@@ -237,7 +237,7 @@ colons or full stops.
 | *Haloxylon salicornicum* | 6 | Bottom of the skin, 1–1.5 mm |
 | *Calligonum comosum* (scarified) | 2 | Centre of the core |
 
-- Small text under the table: `Seeds are split evenly between the two faces. Seed mass: about 13 mg (A), 23 mg (B), under 1% of the pod. Counts aim for 2–3 seedlings per pod and will be tuned in tray trials.`
+- Small text under the table: `Seeds are split evenly between the two faces. Seed mass: about 13 mg (A), 23 mg (B), under 1% of the pod. At typical 5–25% establishment that is about 2–9 seedlings per Mix A pod and 1–3.5 per Mix B pod; tray trials tune the counts.`
 - Credit line: `All seeds soaked in 0.1 mM salicylic acid for better field survival (Pedrini et al. 2021). Full rationale: final-design.md §2.`
 
 ### Slide 5: Designed by simulation (L4, Forest)
@@ -263,19 +263,19 @@ colons or full stops.
 | Sand dust | Fine sand | Mould release; keeps ants off |
 | Seed skin | 20% clay, 60% sand, 15% compost, 5% starch | Low clay lets shoots break through; compost feeds them |
 | Core | 45% clay, 47% sand, 5% starch, 1.5% date-palm fibre, ≤1% date-palm biochar | Strength for the drop; local date-palm waste |
-| Film | Starch:CMC 80:20, thin spray | Holds water at the seeds (+88% establishment in desert trials) |
+| Film | Starch:CMC 80:20, thin spray | Holds about 17.5× its weight in water and biodegrades in soil |
 
 - Three small "chips" below (outlined Forest pill shapes, Hanken Bold 13 pt): `Biodegradable` · `Non-toxic` · `No microplastics`
 - Line: `We avoid polyacrylamide water crystals (microplastics) and synthetic glue binders. The pod is strong until it lands, then softens with the first rain: in field trials, whether the pellet broke up after landing made no difference to establishment.`
-- Credit line: `Teichroew & Rew 2025; Chinese desert aerial-seeding film trials; starch–CMC hydrogel, Sci Rep 2025. See final-design.md §4.`
+- Credit line: `Teichroew & Rew 2025, Restoration Ecology; starch–CMC hydrogel, Sci Rep 2025. See final-design.md §4.`
 
 ### Slide 7: The evidence (L4, Forest)
 
 - Tag `#07` · Display title (Ultra, Leaf green): `Built on what already works.`
 - Four stat blocks in a row (Mint number, Cream caption, tiny italic source):
   - `28×` · `better emergence with small seeds near the pellet surface` · *Lieurance et al. 2024*
-  - `+88%` · `establishment from a thin film coat in Chinese desert aerial seeding` · *BJFU, Mu Us trials*
-  - `48 / 53` · `species protected from harvester ants by a sand coat` · *sand-coat study*
+  - `2.6×` · `more seedlings from low-clay (10%) pellets than controls in the field (2.6 vs 1.0)` · *Teichroew & Rew 2025*
+  - `48 / 53` · `species protected from harvester ants by a sand coat` · *LoPresti et al. 2019*
   - `+23%` · `germination from seed coatings across degraded ecosystems` · *Ren et al. 2026, meta-analysis*
 - Line (Cream 14 pt): `Our germination data: tray trials comparing TerraPod with bare seed and standard seed balls start now, against untreated reference trays, before the January field validation.`
 - Credit line: `Full reference list: prior-art.md in the repo.`
@@ -413,8 +413,9 @@ Open the `.pptx` on your computer (fonts installed) and check:
       Format → Compress Pictures → 150 ppi, all pictures, then export again.
 - [ ] Open the PDF and check fonts are embedded (text looks right, not substituted).
 - [ ] File name: `TerraPod_Phase1_Proposal.pdf`.
-- [ ] Upload on the challenge platform with the participation form **before 19 Nov ends** (no time zone is
-      given, so aim for the afternoon, UAE time).
+- [ ] Upload on the challenge platform with the participation form. **The rules say both "by 19 November" and
+      "before 19 November 2026", with no time zone: submit by the end of 18 Nov UAE time to be safe**, or
+      ask the organisers in the platform chat right away.
 
 **Required topics (from the challenge rules) and where they are:**
 
