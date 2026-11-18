@@ -164,7 +164,7 @@ def main(argv=None):
                      "beats_pick1_pct": 100 * np.mean(d < lead - 1e-3),
                      "ends_on_edge_pct": 100 * np.mean([(not r["flat"]) and r["t_s"] < 3.99 for r in res[name]]),
                      "mass_g": _closed_vol(V, F) * DENSITY * 1000, "face_gap_mm": 2 * b})
-    with open(out / "results.csv", "w", newline="") as fh:
+    with open(out / "results.csv", "w", newline="", encoding="utf-8") as fh:
         wr = csv.DictWriter(fh, fieldnames=list(rows[0]))
         wr.writeheader()
         wr.writerows(rows)
@@ -207,7 +207,7 @@ def main(argv=None):
     pg.write_stl(out / f"{tag}.stl", *wavy_mesh(pod, m, b, n_theta=720, n_s=48))
     lines += ["", f"Moulds written for the best wavy variant ({best['design']}): `{tag}_top_mould_half.stl` and "
               f"`{tag}_bottom_mould_half.stl` (print one of each; the bottom half flips onto the top). Pod: `{tag}.stl`."]
-    (out / "results.md").write_text("\n".join(lines) + "\n")
+    (out / "results.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 
 

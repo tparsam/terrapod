@@ -112,7 +112,7 @@ def test_analysis_turns_raw_measurements_into_deck_numbers(tmp_path):
         {"design": "ring", "test": "tumble", "mass_dry_g": "4.0", "mass_after_g": "3.8"},
     ]
     path = tmp_path / "data.csv"
-    with open(path, "w", newline="") as fh:
+    with open(path, "w", newline="", encoding="utf-8") as fh:
         import csv as _csv
         w = _csv.DictWriter(fh, fieldnames=at.COLUMNS)
         w.writeheader()
@@ -146,7 +146,7 @@ def test_analysis_reports_how_deep_pods_sink_into_sand(tmp_path):
     import analyse_tests as at
 
     path = tmp_path / "d.csv"
-    with open(path, "w", newline="") as fh:
+    with open(path, "w", newline="", encoding="utf-8") as fh:
         w = _csv.DictWriter(fh, fieldnames=at.COLUMNS)
         w.writeheader()
         w.writerows([{"design": "ring", "test": "drop", "surface": "sand", "result": "intact", "embed_mm": "12"},
@@ -161,7 +161,7 @@ def test_analysis_reports_drying_time_and_wind_stability(tmp_path):
     import analyse_tests as at
 
     path = tmp_path / "d.csv"
-    with open(path, "w", newline="") as fh:
+    with open(path, "w", newline="", encoding="utf-8") as fh:
         w = _csv.DictWriter(fh, fieldnames=at.COLUMNS)
         w.writeheader()
         w.writerows([{"design": "ring", "test": "drying", "dry_hours": "30"},

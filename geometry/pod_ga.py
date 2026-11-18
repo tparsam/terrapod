@@ -418,7 +418,7 @@ def main(argv=None):
     F = np.array([[m["mass_g"], m["roll_m"], m["stress_rel"]] for m in metrics])  # fine-mesh numbers
     picks = pick_spread(F, cfg.picks)
 
-    with open(out / "pareto.csv", "w", newline="") as fh:
+    with open(out / "pareto.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
         w.writerow(["pick", *asdict(pods[0]), *metrics[0]])
         for i, (p, m) in enumerate(zip(pods, metrics)):
@@ -492,7 +492,7 @@ def main(argv=None):
             m["stress_rel"] = math.nan
         lines.append(f"| {name} | " + " | ".join(str(v) for v in asdict(p).values())
                      + " | " + " | ".join(f"{m[c]:.3f}" for c in cols) + " |")
-    (out / "summary.md").write_text("\n".join(lines) + "\n")
+    (out / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
     return pods, F, picks
 

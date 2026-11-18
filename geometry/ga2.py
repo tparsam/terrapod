@@ -135,7 +135,7 @@ def write_outputs(out, name, min_width, cfg, pods, metrics, ok, F, picks, lead_m
     keys = list(dataclasses.asdict(LEAD))
     mcols = ["mass_g", "cost_aed_material", "travel_median_cm", "travel_p90_cm", "on_edge_pct", "stress_rel",
              "cover_mm", "wall_mm", "narrowest_width_mm", "max_thick_mm", "tip_barrier_mm", "sa_per_vol_1_per_mm"]
-    with open(out / "pareto.csv", "w", newline="") as fh:
+    with open(out / "pareto.csv", "w", newline="", encoding="utf-8") as fh:
         wr = csv.writer(fh)
         wr.writerow(["pick", "meets_all_rules", *keys, *mcols])
         for i, (p, m) in enumerate(zip(pods, metrics)):
@@ -191,7 +191,7 @@ def write_outputs(out, name, min_width, cfg, pods, metrics, ok, F, picks, lead_m
                      + " | ".join(f"{metrics[i][c]:.2f}" for c in cols) + " |")
     lines += ["", "Files: `pick_N.stl` (pod), `pick_N_mould_half.stl` (press mould, print twice), `pareto.csv`, "
               "`pareto.png`."]
-    (out / "summary.md").write_text("\n".join(lines) + "\n")
+    (out / "summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines), flush=True)
 
 

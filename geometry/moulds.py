@@ -96,7 +96,7 @@ def main(argv=None):
         settings = " / ".join(f"{v:g}" if isinstance(v, int) else f"{v:.2f}" for v in vars(pod).values())
         lines.append(f"| `{name}_mould_half.stl` | {settings} | {vol:.3f} | "
                      f"{side * 1000:.0f} x {side * 1000:.0f} x {height * 1000:.1f} (+{PEG_H:g} pegs) |")
-    (mdir / "moulds.md").write_text("\n".join(lines) + "\n")
+    (mdir / "moulds.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
 
 
